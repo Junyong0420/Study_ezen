@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+        div.parent {
+            position: relative;
+            width: 400px;
+            height: 200px;
+            background: royalblue;
+        } 
+
+        div.child1 {
+            position: absolute;
+            top: 80px;
+            right: 150px;
+            width: 200px;
+            height: 100px;
+            background: salmon;
+            z-index: 2;
+        }
+            /* z-index 숫자 높을수록 위(우선적으로)에 보임 */
+        div.child2 {
+            position: absolute;
+            top: 80px;
+            right: 10px;
+            width: 200px;
+            height: 100px;
+            background: rgb(170, 245, 152);
+            z-index: 1;
+        }
+        
+        div.child3 {
+            position: absolute;
+            top: 80px;
+            right: 50px;
+            width: 200px;
+            height: 100px;
+            background: red;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child1">1</div>
+        <div class="child2">2</div>
+        <div class="child3">3</div>
+    </div>
+</body>
+</html>

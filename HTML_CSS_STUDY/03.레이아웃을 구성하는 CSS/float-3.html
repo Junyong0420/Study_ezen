@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>float-3</title>
+    <style>
+        div{
+            padding: 20px;
+            margin: 10px;
+        }
+        #box1 {
+            background-color: aqua;
+            float: left;
+        }
+        #box2 {
+            background-color: aquamarine;
+            float: right;
+        }
+        #box3 {
+            background-color: blue;
+        }
+        #box4 {
+            background-color: blueviolet;
+            clear: left; /* float left를 해제 / clear: both left,right 둘다 해제*/
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">박스1</div>
+    <div id="box2">박스2</div>
+    <div id="box3">박스3</div>
+    <div id="box4">박스4</div>
+</body>
+</html>

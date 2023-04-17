@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 입력 양식은 form 필수 / label&input = type 활용-->
+    <!-- id태그 모든 태그에 사용가능 / 속성값(이름)을 부여(중복불가) -->
+    <!-- fieldset = 구역만들기 , legend = 제목? 짓기 / 
+        submit = 버튼 , value 박스안에 글자 / maxlength = 최대 글자수-->
+    <form>
+        <fieldset>
+            <legend>회원가입</legend>
+            <label for="user-id">아이디(6자 이상)</label>
+            <input type="text" id="user-id" size="10" maxlength="10">
+            <label for="user-pw">비밀번호</label>
+            <input type="password" id="user-pw" size="10" maxlength="5">
+            <input type="submit" value="로그인">
+        </fieldset>
+    </form>
+</body>
+</html>

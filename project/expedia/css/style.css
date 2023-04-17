@@ -1,0 +1,252 @@
+@charset "utf-8";
+
+/*초기화 태그*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.wrap {
+    overflow: hidden;
+    min-width: 1200px;
+}
+
+/* 헤더 */
+
+header {
+    height: 75px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #E4E2E0;
+}
+
+nav {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+nav a:hover {
+    color: rgb(67, 67, 252)
+}
+
+.nav__logo {
+    display: block;
+    width: 150px;
+}
+
+.nav__top-button {
+    width: 500px;
+    padding-left: 20px;
+}
+
+.nav__menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 550px;
+}
+
+.nav__menu > li {
+    padding: 0 10px;
+}
+
+/* 메인 */
+
+main {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.main-section {
+/* 섹션 별 여백을 준다 */
+    margin: 40px 0;
+}
+
+/* 높이*/
+.main__top {height: 260px;}
+
+.sso__content {
+    height: 60px;
+    background-color:#343B53;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.sso__content > p:nth-child(1) {
+    width: 80px;
+    text-align: center;
+}
+
+.sso__content > p:nth-child(2) {
+    width: 1120px;
+}
+
+.sso__content > p:nth-child(2) > a {
+    text-decoration: underline;
+    color: white;
+}
+
+
+.banner1__content {
+    height: 500px;
+    background-image:linear-gradient(rgba(1, 2, 23, 0.5), rgba(0, 0, 0, 0.2)
+    ), url(../images/banner1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+}
+
+.banner1_content >:nth-child(1) {
+    width: 400px;
+    padding: 70px 40px;
+}
+.banner1_content >:nth-child(2) {
+    width: 800px;
+}
+
+.main__banner2 {height: 260px;}
+
+.banner2__content {
+    height: 260px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    display: flex;
+}
+.banner2__content > div:nth-child(1){
+    width: 400px;
+    /* 100% 주려면 부모태그에 height 있어야함 */
+    height: 100%;
+    background-image: url(../images/banner2.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.banner2__content > div:nth-child(2){
+    width: 550px;
+    padding: 5px 15px;
+}
+
+.banner2__content > div:nth-child(3){
+    width: 250px;
+    /* 블록 태그 안에 있는 인라인태그, 글자만 가운데 정렬할 수 있다 */
+    text-align: center;
+    padding: 30px 0;
+}
+
+/* .main__travel-helper {height: 140px;} */
+
+.main__travel-helper > h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.travel-helper__content {
+    display: flex;
+    height: 80px;
+}
+
+.btn-helper {
+    border: 1px solid gray;
+    border-radius: 10px;
+    text-align: left;
+    width: 33.33%;
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 14px;
+}
+
+.btn-helper > div {
+    display: flex;
+    height: 50%;
+    align-items: center;
+}
+
+.btn-helper > div > div:nth-child(1) {
+    width: 70%;
+    font-size: 20px;
+}
+
+.btn-helper > div > div:nth-child(2) {
+    width: 30%;
+    text-align: right;
+}
+
+/* .main__banner3 {height: 190px;} */
+
+.banner3__content {
+    height: 190px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: flex;
+}
+
+.banner3__content > div:nth-child(1) {
+    border-radius: 10px 0 0 10px;
+    height: 100%;
+    background-image: url('../images/banner3.jpg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 100% 100%;
+    width: 55%;
+}
+
+.banner3__content > div:nth-child(2) {
+    width: 45%;
+    padding: 10px 20px;
+}
+
+.main__early-reservation {height: 310px;}
+
+.main__early-reservation > h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.main__early-reservation > div {
+    display: flex;
+}
+
+.main__early-reservation > div > .early-reservation1{
+    border-radius: 10px;
+    height: 250px;
+    width: 1000px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(5, 1, 20, 0.8)), url('../images/early3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 10px;
+}
+
+
+.main__more {height: 60px;}
+
+/* 푸터 */
+
+footer {
+    height: 600px;
+}

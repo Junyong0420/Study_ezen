@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 500px;
+            margin: 20px auto;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin: 50px;
+        }
+        #box1 {
+            background-color: yellowgreen;
+            /* transparent 투명하게 */
+            border: 1px solid transparent;
+            /* 애니메이션 이름 지정 */
+            animation-name: shape;
+            animation-duration: 3s; /* 3초동안 진행 */
+            animation-iteration-count: 2; /* 2번만 반복 */
+            /* 애니메이션 진행순서
+            normal 1->3 / reverse 3->1 / alternate 홀수는 normal로 / reverse는 짝수*/
+            animation-direction: normal; 
+        }
+        #box2 {
+            background-color: violet;
+            border: 1px solid transparent;
+            animation-name: rotate;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        /* 애니메이션 정의 */
+        @keyframes shape {
+            from {
+                border: 1px solid transparent;
+            }
+            30% {
+                border: 1px solid red;
+            }
+
+            60% {
+                border: 1px solid pink;
+            }
+            to {
+                border: 1px solid black;
+                border-radius: 50%;
+            }
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            
+            to {
+                transform: rotate(45deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webfont.html</title>
+    <style>
+        /* 폰트 로드 / local = 내 컴퓨터에 있다면 가져온다*/
+        @font-face {
+            font-family: 'ostrich'; /* 폰트 이름을 지어준다 */
+            src: local('ostrich sans'),
+            url('../fonts/ostrich-sans-bold.woff') format('woff'),
+            url('../fonts/ostrich-sans-bold.ttf') format('truetype'),
+            url('../fonts/ostrich-sans-bold.svg') format('svg');
+        }
+        /* sans-serif , 폰트 뒤에 무조건 2군으로 와야함 */
+        .wfont{font-family: 'ostrich', sans-serif;}
+
+    </style>
+</head>
+<body>
+    <p>Using Default Fonts</p>
+    <p class="wfont">Using Web Fonts</p>
+</body>
+</html>

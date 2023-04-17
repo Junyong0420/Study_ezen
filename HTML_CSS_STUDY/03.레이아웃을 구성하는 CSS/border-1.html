@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border-1</title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            margin: 15px; /* margin이 상하좌우로 15px 적용됨*/
+            /* border-width: 5px; 선의 굵기 여러개 입력시 시계방향 */
+            line-height: 100px; /*중요! : 수직 가운데 정렬*/
+        }
+        
+        #box1 {
+            /* border-style: solid;
+            border-color: aqua; */
+            border: 5px solid aqua;
+            /* border-radius: 100px; */
+            /* border-radius: 50%; 원형 */
+            border-radius: 10px 0 30px 40px;
+        }
+        #box2 {
+            /* border-style: dotted; */
+            border: dotted red;
+        }
+        #box3 {
+            /* border-style: dashed; */
+            border-bottom: 1px dashed blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1">실선 테두리</div>
+    <div id="box2">점선 테두리</div>
+    <div id="box3">짧은 직선 테두리</div>
+</body>
+</html>
